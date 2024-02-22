@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -14,5 +14,5 @@ sqa_criteria:
         commands:
         - fair-eva.py -ID 8b322a15-589a-4dee-a18b-bd89fec8ce64 -R epos -B https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1
           --tool_endpoint http://localhost:9090/v1.0/rda/rda_all
-        container: qc.fair_ready-sepia-binturong
+        container: qc.fair_cranky-violet-neanderthal
 timeout: 5400
